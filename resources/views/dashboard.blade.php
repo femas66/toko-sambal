@@ -3,6 +3,14 @@
 <div class="container">
    <h2>Dashborad</h2>
    <hr>
+   <style>
+      .gmbar {
+         transition: transform .2s;
+      }
+      .gmbar:hover {
+         transform: scale(1.3);
+      }
+   </style>
    <a href="/tambah" class="btn btn-primary" title="Tambah">Tambah Sambal</a>
    <a href="/logout" class="btn btn-danger" title="Logout">Logout</a>
    <table class="table">
@@ -26,7 +34,7 @@
             <?php
                $gambar = '/img/' . $item->img;
             ?>
-            <td><img src='{{ url($gambar) }}' width="50" height="50"></td>
+            <td><a href='/edit/img/{{ $item->id }}'><img src='{{ url($gambar) }}' width="50" height="50" class="gmbar"></a></td>
             <td>{{ $item['nama-sambal'] }}</td>
             <td>{{ $item['level-sambal'] }}</td>
             <td>{{ $item->stok }}</td>

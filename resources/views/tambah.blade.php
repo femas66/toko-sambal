@@ -39,11 +39,11 @@
       <hr>
       <div class="mb-3">
          <label for="exampleFormControlInput1" class="form-label">Stok sambal</label>
-         <input type="number  " class="form-control" id="exampleFormControlInput1" placeholder="Stok sambal" name="stok">
+         <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Stok sambal" name="stok">
       </div>
       <div class="mb-3">
          <label for="exampleFormControlInput1" class="form-label">Harga sambal</label>
-         <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Harga sambal" name="harga">
+         <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Harga sambal" name="harga">
       </div>
       <button type="submit" class="btn btn-primary">Tambah</button>       
    </form>

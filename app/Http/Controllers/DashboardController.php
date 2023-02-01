@@ -15,6 +15,7 @@ class DashboardController extends Controller
         return view('dashboard', compact('data'));
     }
     public function tambah(Request $request) {
+        $file = $request->file('avatar');
         $filename = $request->file->hashName();
         $request->file->move(base_path('/public/img'), $filename);
 
